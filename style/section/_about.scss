@@ -1,0 +1,75 @@
+.about {
+    background: url(./../img/about-bg.jpg) no-repeat center/cover;
+    padding: 98px 0 219px;
+
+    &__title {
+        color: $light-color;
+        margin-bottom: 168px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 79px;
+            height: 2px;
+            background-color: $main-color;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-75%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 79px;
+            height: 2px;
+            background-color: $main-color;
+            bottom: -28px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    &__descr {
+        font-weight: 300;
+        line-height: 30px;
+        color: #BBBBBB;
+        max-width: 1160px;
+        text-align: center;
+        margin-bottom: 37px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(./../img/about-quotes.png);
+            width: 44px;
+            height: 32px;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__name {
+        font-size: toRem(18);
+        font-weight: 700;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 10px;
+    }
+
+    &__profession {
+        font-weight: 300;
+        display: block;
+        text-align: center;
+        color: #BBBBBB;
+        margin-bottom: 38px;
+    }
+
+    &__image {
+        text-align: center;
+    }
+}

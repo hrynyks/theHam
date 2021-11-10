@@ -1,0 +1,64 @@
+.subhero {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(320px, 482px));
+
+        @include a (laptop) {
+            grid-template-columns: repeat(2, minmax(320px, 482px));
+            justify-content: center;
+
+        }
+
+        @include a (tablet-xl) {
+            grid-template-columns: minmax(320px, 482px);
+        }
+    }
+
+    &__item {
+        text-align: center;
+
+        &-dark {
+            background-color: #1C2A33;
+            padding: 95px 0 110px;
+        }
+
+        &-light {
+            background-color: #18CFAB;
+            padding: 105px 0 110px;
+
+            &-1 {
+                @include a (laptop) {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+
+                @include a (tablet-xl) {
+                    grid-row: 2/3;
+                }
+            }
+        }
+    }
+
+    &__img-1 {
+        margin-bottom: 47px;
+    }
+
+    &__img-2 {
+        margin-bottom: 58px;
+    }
+
+    &__title {
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &-dark {
+            color: $main-color;
+        }
+
+        &-light {
+            color: $light-color;
+        }
+    }
+
+
+}

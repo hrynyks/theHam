@@ -1,0 +1,16 @@
+.footer {
+    padding: 48px 0;
+    background-color: #22353F;
+
+    &__copyright {
+        font-size: toRem(14);
+        font-weight: 300;
+        color: #AEAEAE;
+        display: block;
+        text-align: center;
+    }
+
+    &__span {
+        color: $main-color;
+    }
+}
